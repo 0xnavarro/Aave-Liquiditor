@@ -1,0 +1,46 @@
+{
+  "name": "aave-liquidator",
+  "version": "1.0.0",
+  "description": "Bot liquidador automatizado para Aave v3 en Arbitrum",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "deploy": "npx hardhat run scripts/deploy.ts --network arbitrum",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "monitor": "ts-node scripts/monitor.ts",
+    "monitor:continuous": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "aave",
+    "defi",
+    "liquidations",
+    "arbitrum",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aave/core-v3": "^1.17.2",
+    "@openzeppelin/contracts": "^4.9.3",
+    "axios": "^1.7.9",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.7.1",
+    "graphql": "^16.6.0",
+    "graphql-request": "^6.1.0",
+    "web3": "^1.9.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^18.15.11",
+    "hardhat": "^2.19.4",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.1",
+    "typescript": "^5.0.4"
+  }
+}

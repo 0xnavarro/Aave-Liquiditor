@@ -1,0 +1,35 @@
+# Node
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Hardhat
+cache
+artifacts
+typechain
+typechain-types
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Build
+dist
+build
+coverage
+
+# Logs
+logs
+*.log
+
+# System
+.DS_Store
+Thumbs.db 
